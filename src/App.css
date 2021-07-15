@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+.App{
+    position:relative;
+    display:flex;
+    width: 1488px;
+    height:1754px;
+    background-color: burlywood;
+    border:red;
+}
+.Outils{
+    position: relative;
+    display: flex;
+    width: 248px;
+    height:1754px;
+    background-color: rgb(62, 50, 226);
+    border:red;
+}
+.Entete{
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    font-size: xx-large;
+    background-color: rgb(4, 94, 16);
+    width: 1240px;
+    height: 15%;
+    border-width: 10px;
+    border-color: brown;
+}
+.formation{
+    
+    display: flex;
+    width: 75%;
+    height:auto;
+    background-color: rgb(17, 148, 141);
+    border:red;
+
+}
