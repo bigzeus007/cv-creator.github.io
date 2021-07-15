@@ -28,10 +28,26 @@
     border-width: 10px;
     border-color: brown;
 }
-.formation{
+.corpsCV{
+    display: grid;
+    width:1240px;
+    grid-template-columns: 75% 25%;
+}
+.formation, .experiences, .realisations, .langues{
     
     display: flex;
-    width: 75%;
+    padding:20px;
+    margin:5px ;
+    height:auto;
+    background-color: rgb(17, 148, 141);
+    border:red;
+
+}
+
+.divers{
+    display: flex;
+    padding:20px;
+    margin:5px ;
     height:auto;
     background-color: rgb(17, 148, 141);
     border:red;
