@@ -28,6 +28,32 @@
     border-width: 10px;
     border-color: brown;
 }
+
+.coordonnees{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.coordonnees > label{
+    font-style: italic;
+    font-size:small;
+}
+.coordonnees > input{
+    font-style:oblique;
+    font-size:medium;
+    background-color:inherit;
+    
+
+}
+.titreCV{
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+
 .corpsCV{
     display: grid;
     width:1240px;
