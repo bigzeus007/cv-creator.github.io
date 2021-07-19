@@ -6,16 +6,21 @@ import Divers from './Components/Divers';
 import Experiences from './Components/Experiences';
 import Realisations from './Components/Realisations';
 import Langues from './Components/Langues';
+import React, { useState } from 'react';
 
 function App() {
+  
+  const [addFormation,setAddFormation]=useState([{titre:"", contenu:""}]);
+
+  
   return (
     <div className="App" >
-      <Outils />
+      <Outils addFormation={addFormation} setAddFormation={setAddFormation} />
       <div className="monCV">
         <Entete />
         <div className="corpsCV">
           <div className="lePrioritaire">
-            <Formation />
+            <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
             <Experiences />
             <Realisations />
             <Langues />

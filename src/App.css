@@ -11,7 +11,10 @@
 }
 .Outils{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(5,50px);
+    
+    
     width: 248px;
     height:1754px;
     background-color: rgb(62, 50, 226);
