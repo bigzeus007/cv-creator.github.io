@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TextareaAutosize from 'react-textarea-autosize';
+
 
 function Formation({addFormation,setAddFormation}) {
 
@@ -11,10 +11,10 @@ function Formation({addFormation,setAddFormation}) {
         <div id="myFormation" className="myFormation" >
             {addFormation.map((element)=>(
             <div key={element.index} >
-                <label htmlFor="dateDebut">DE</label><input id="dateDebut" type="date"></input> <label htmlFor="dateFin">A</label> <input id="dateFin" type="date"></input>
-                <TextareaAutosize style={{width:"63%"}} > Specialite</TextareaAutosize>
-                <label >Organisme <TextareaAutosize style={{width:"65%",backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></TextareaAutosize></label>
-                <label >Ville <TextareaAutosize style={{width:"21%",backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></TextareaAutosize></label>
+                <label htmlFor="dateDebut">DE</label><input id="dateDebut" type="date" style={{position:"relative",}}></input> <label htmlFor="dateFin">A</label> <input id="dateFin" type="date"></input>
+                <textarea style={{width:"63%"}} > Specialite</textarea>
+                <label >Organisme <textarea style={{width:"65%",backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></textarea></label>
+                <label >Ville <textarea style={{width:"21%",backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></textarea></label>
 
                 </div>))}
         </div>

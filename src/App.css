@@ -54,6 +54,12 @@
     position: relative;
     text-align: center;
     top: 30%;
+    width: 60%;
+    left: 20%;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight:bolder;
+    background-color: transparent;
 }
 
 
@@ -82,4 +88,12 @@
     border:red;
 
 }
-
+.myFormation{
+    position: relative;
+    display: grid;
+    padding: 15px;
+    margin: 5px;
+    justify-items: stretch;
+    
+    
+}

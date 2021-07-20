@@ -1,4 +1,5 @@
 import React, { useState , useRef, useEffect } from 'react';
+import TextareaAutosize from 'react-textarea-autosize';
 
 
 function Entete(){
@@ -29,7 +30,7 @@ function Entete(){
 
 
         </div>
-        <div className="titreCV">Titre</div>
+        <TextareaAutosize maxRows="5" className="titreCV">Titre</TextareaAutosize>
         <div>
             <input id="image" type="file" className="image" onChange={(e)=>{
                 let reader = new FileReader();
