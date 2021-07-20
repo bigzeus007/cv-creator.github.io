@@ -10,7 +10,7 @@ import React, { useState } from 'react';
 
 function App() {
   
-  const [addFormation,setAddFormation]=useState([{titre:"", contenu:""}]);
+  const [addFormation,setAddFormation]=useState([{index:0, titre:"1", contenu:""}]);
 
   
   return (
