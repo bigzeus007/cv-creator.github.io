@@ -62,9 +62,9 @@
     width:1240px;
     grid-template-columns: 75% 25%;
 }
-.formation, .experiences, .realisations, .langues{
+.formation, .experiences, .realisations, .langues, .profil{
     
-    display: flex;
+    display: block;
     padding:20px;
     margin:5px ;
     height:auto;
@@ -82,3 +82,4 @@
     border:red;
 
 }
+

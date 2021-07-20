@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import App from '../App';
 
-function Outils({addFormation, setAddFormation}) {
+function Outils({addFormation, setAddFormation,profil,setProfil}) {
     let a=addFormation.length
     useEffect(()=>{
         
@@ -12,6 +12,14 @@ function Outils({addFormation, setAddFormation}) {
     return(
         <div className="Outils">
             <div> Boite a outils</div>
+
+            <button id="profil" onClick={()=>{
+                setProfil(profil==='' ? "none" : "");
+                
+                }}
+                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Profil</button>
+
+            
             <button id="addFormation" onClick={()=>{
                 setAddFormation([...addFormation,{index:a ,titre:"", contenu:""}]);
                 
