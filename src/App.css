@@ -90,8 +90,9 @@
 }
 .myFormation{
     position: relative;
-    display: grid;
-    grid-gap: 10px;
+    display: list-item;
+    
+   
     padding-left: 15px;
     padding-top: 10px;
     margin: 5px;
@@ -100,6 +101,7 @@
     
 }
 .uneFormation{
-    display: inline-block;
+    display: grid;
+
     
 }
