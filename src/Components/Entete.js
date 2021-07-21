@@ -18,8 +18,8 @@ function Entete(){
             <input type="tel" id="tel"></input>
             <label htmlFor="adress"> adress </label>
             <input type="text" id="adress"></input>
-            <label htmlFor="ville"> ville </label>
-            <input type="text" id="ville"></input>
+            <label htmlFor="Ville"> ville </label>
+            <input type="text" id="Ville"></input>
             <label htmlFor="pays"> pays </label>
             <input type="text" id="pays"></input>
             <label htmlFor="dateDeNaissance"> dateDeNaissance </label>
@@ -30,7 +30,7 @@ function Entete(){
 
 
         </div>
-        <TextareaAutosize maxRows="5" className="titreCV">Titre</TextareaAutosize>
+        <TextareaAutosize maxRows="5" className="titreCV" defaultValue="Titre"></TextareaAutosize>
         <div>
             <input id="image" type="file" className="image" onChange={(e)=>{
                 let reader = new FileReader();

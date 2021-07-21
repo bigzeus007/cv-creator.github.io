@@ -70,7 +70,7 @@
 }
 .formation, .experiences, .realisations, .langues, .profil{
     
-    display: block;
+    display:grid;
     padding:20px;
     margin:5px ;
     height:auto;
@@ -100,8 +100,31 @@
     
     
 }
-.uneFormation{
-    display: grid;
+.dateDebut{
+    grid-area: dateDebut;
+} 
+.dateFin{
+    grid-area: dateFin;
+} 
+.specialite{
+    grid-area: specialite;
+} 
+.diplome{
+    grid-area: diplome;
+} 
+.organisme{
+    grid-area: organisme;
+} 
+.ville{
+    grid-area: ville;
+}
 
-    
+.uneFormation{
+    position: relative;
+    display: grid;
+    grid-template: 
+    'dateDebut dateFin organisme organisme organisme ville'
+    'diplome diplome diplome specialite specialite specialite';
+    padding-bottom: 20px;
+
 }
