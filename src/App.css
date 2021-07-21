@@ -91,9 +91,15 @@
 .myFormation{
     position: relative;
     display: grid;
-    padding: 15px;
+    grid-gap: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
     margin: 5px;
-    justify-items: stretch;
+   
     
+    
+}
+.uneFormation{
+    display: inline-block;
     
 }
