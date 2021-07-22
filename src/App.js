@@ -14,11 +14,12 @@ function App() {
   const [profil,setProfil]=useState("");
   const [addFormation,setAddFormation]=useState([{index:0, titre:"1", contenu:""}]);
   const [addExperience,setAddExperience]=useState([{index:0, titre:"1", contenu:""}]);
+  const [realisation,setRealisation]=useState("");
 
   
   return (
     <div className="App" >
-      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} addExperience={addExperience} setAddExperience={setAddExperience}/>
+      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation}/>
       <div className="monCV">
         <Entete />
         <div className="corpsCV">
@@ -26,7 +27,7 @@ function App() {
             <Profil profil={profil} setProfil={setProfil}/>
             <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
             <Experiences addExperience={addExperience} setAddExperience={setAddExperience}/>
-            <Realisations />
+            <Realisations realisation={realisation} setRealisation={setRealisation} />
             <Langues />
 
           </div>

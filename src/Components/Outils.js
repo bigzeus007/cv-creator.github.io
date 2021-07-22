@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import App from '../App';
 
-function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience}) {
+function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation}) {
     let a=addFormation.length
     useEffect(()=>{
         
@@ -30,7 +30,12 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
                 
                 }}
                  className="Outil" style={{display:"block",height:"40px"}}>Ajouter Experience</button>
-            <button id="realisation" className="Outil" style={{display:"block",height:"40px"}}>Ajouter Realisation</button>
+
+            <button id="realisation" onClick={()=>{
+                setRealisation(realisation==='' ? "none" : "");
+                
+                }}
+                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Realisation</button>
             <button id="langue" className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
         </div>
     );
