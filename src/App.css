@@ -91,14 +91,10 @@
 .myFormation{
     position: relative;
     display: list-item;
-    
-   
     padding-left: 15px;
     padding-top: 10px;
     margin: 5px;
    
-    
-    
 }
 .dateDebut{
     grid-area: dateDebut;
@@ -118,6 +114,8 @@
 .ville{
     grid-area: ville;
 }
+   
+
 
 .uneFormation{
     position: relative;
@@ -125,6 +123,45 @@
     grid-template: 
     'dateDebut dateFin organisme organisme organisme ville'
     'diplome diplome diplome specialite specialite specialite';
+    padding-bottom: 20px;
+
+}
+
+.myExperience{
+    position: relative;
+    display: list-item;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin: 5px;
+   
+}
+
+.dateDebutE{
+    grid-area: dateDebutE;
+} 
+.dateFinE{
+    grid-area: dateFinE;
+} 
+.mission{
+    grid-area: mission;
+} 
+.fonction{
+    grid-area: fonction;
+} 
+.entreprise{
+    grid-area: entreprise;
+} 
+.villeE{
+    grid-area: villeE;
+}
+
+.uneExperience{
+    position: relative;
+    display: grid;
+    grid-template: 
+    'dateDebutE dateFinE entreprise entreprise entreprise villeE'
+    'fonction fonction fonction fonction fonction fonction'
+    'mission mission mission mission mission mission';
     padding-bottom: 20px;
 
 }
