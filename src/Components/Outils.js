@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import App from '../App';
 
-function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation}) {
+function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage}) {
     let a=addFormation.length
     useEffect(()=>{
         
@@ -36,7 +35,8 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
                 
                 }}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Realisation</button>
-            <button id="langue" className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
+            <button id="langue" onClick={()=>{setAddLanguage([...addLanguage,(addLanguage.length+1)]);console.log(addLanguage.length)}}
+                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
         </div>
     );
 }

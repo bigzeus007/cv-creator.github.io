@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 function Formation({addFormation,setAddFormation}) {
 
-    useEffect(()=>{console.log(addFormation.length);console.log(typeof(addFormation[0].titre))},[addFormation]);
+    
 
     return(
         <>
@@ -18,7 +18,7 @@ function Formation({addFormation,setAddFormation}) {
                 <label htmlFor="organisme" className="organisme">Organisme <input type="text" id="organisme" style={{backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></input></label>
                 <label htmlFor="ville" className="ville">Ville <input type="text" id="ville" style={{backgroundColor:"transparent",color:"blue",fontSize:"14px"}}></input></label>
 
-                </div>))}
+            </div>))}
         </div>
         </>
     );

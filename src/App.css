@@ -28,7 +28,7 @@
     background-color: rgb(4, 94, 16);
     width: 1240px;
     height: 15%;
-    border-width: 10px;
+    border-width: 10px double black;
     border-color: brown;
 }
 

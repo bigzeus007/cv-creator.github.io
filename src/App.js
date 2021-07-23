@@ -15,11 +15,13 @@ function App() {
   const [addFormation,setAddFormation]=useState([{index:0, titre:"1", contenu:""}]);
   const [addExperience,setAddExperience]=useState([{index:0, titre:"1", contenu:""}]);
   const [realisation,setRealisation]=useState("");
+  const [addLanguage,setAddLanguage]=useState([]);
+  
 
   
   return (
     <div className="App" >
-      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation}/>
+      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
       <div className="monCV">
         <Entete />
         <div className="corpsCV">
@@ -28,11 +30,13 @@ function App() {
             <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
             <Experiences addExperience={addExperience} setAddExperience={setAddExperience}/>
             <Realisations realisation={realisation} setRealisation={setRealisation} />
-            <Langues />
+            
 
           </div>
           <div className="leSecondaire">
-            <Divers />
+            <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
+            <Divers  />
+            
           </div>
         </div>
       </div>
