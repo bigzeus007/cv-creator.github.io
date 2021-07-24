@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
-
-function Formation({addFormation,setAddFormation}) {
+function Formation({addFormation}) {
 
     
 

@@ -8,6 +8,8 @@ import Realisations from './Components/Realisations';
 import Langues from './Components/Langues';
 import Profil from './Components/Profil';
 import React, { useState } from 'react';
+import CentresInteret from './Components/CentresInteret';
+import Qualites from './Components/Qualites';
 
 function App() {
   
@@ -15,7 +17,7 @@ function App() {
   const [addFormation,setAddFormation]=useState([{index:0, titre:"1", contenu:""}]);
   const [addExperience,setAddExperience]=useState([{index:0, titre:"1", contenu:""}]);
   const [realisation,setRealisation]=useState("");
-  const [addLanguage,setAddLanguage]=useState([]);
+  const [addLanguage,setAddLanguage]=useState([{visible:"invisible"}]);
   
 
   
@@ -34,8 +36,12 @@ function App() {
 
           </div>
           <div className="leSecondaire">
-            <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
             <Divers  />
+            <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
+            <Qualites />
+            <CentresInteret />
+
+            
             
           </div>
         </div>

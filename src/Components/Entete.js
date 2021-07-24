@@ -1,11 +1,10 @@
-import React, { useState , useRef, useEffect } from 'react';
+import React, { useState} from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 
 
 function Entete(){
-    const[myPhoto,setMyPhoto]=useState(null)
+
     const [myPreview,setMyPreview]=useState(null)
-    const fileInputRef= useRef()
 
     return(
         <div className="Entete">

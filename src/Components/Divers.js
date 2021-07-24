@@ -1,6 +1,6 @@
 function Divers(){
     return(
-        <div className="divers">Divers</div>
+        <div className="divers">Détails personnels</div>
     );
 }
 
