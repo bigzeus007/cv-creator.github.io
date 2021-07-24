@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 
-function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage}) {
+function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage,addCentresInteret,addQualites,setAddQualites,setAddCentresInteret}) {
     let a=addFormation.length
     useEffect(()=>{
         
@@ -37,6 +37,14 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Realisation</button>
             <button id="langue" onClick={()=>{setAddLanguage([...addLanguage,{visible:"visible"}])}}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
+
+            
+            <button id="qualites" onClick={()=>{setAddQualites([...addQualites,{visible:"visible"}])}}
+                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Qualité</button>
+
+            <button id="centresInteret" onClick={()=>{setAddCentresInteret([...addCentresInteret,{visible:"visible"}])}}
+                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Centre d'intérêt</button>
+
         </div>
     );
 }

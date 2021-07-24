@@ -18,12 +18,18 @@ function App() {
   const [addExperience,setAddExperience]=useState([{index:0, titre:"1", contenu:""}]);
   const [realisation,setRealisation]=useState("");
   const [addLanguage,setAddLanguage]=useState([{visible:"invisible"}]);
+  const [addQualites,setAddQualites]=useState([{visible:"invisible"}]);
+  const [addCentresInteret,setAddCentresInteret]=useState([{visible:"invisible"}]);
   
 
   
   return (
     <div className="App" >
-      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
+      <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} 
+      addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} 
+      addLanguage={addLanguage} setAddLanguage={setAddLanguage} addQualites={addQualites} setAddQualites={setAddQualites} addCentresInteret={addCentresInteret}
+      setAddCentresInteret={setAddCentresInteret}
+      />
       <div className="monCV">
         <Entete />
         <div className="corpsCV">
@@ -38,8 +44,8 @@ function App() {
           <div className="leSecondaire">
             <Divers  />
             <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
-            <Qualites />
-            <CentresInteret />
+            <Qualites addQualites={addQualites} setAddQualites={setAddQualites}/>
+            <CentresInteret addCentresInteret={addCentresInteret} setAddCentresInteret={setAddCentresInteret}/>
 
             
             

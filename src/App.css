@@ -12,7 +12,7 @@
 .Outils{
     position: relative;
     display: grid;
-    grid-template-rows: repeat(5,50px);
+    grid-template-rows: repeat(7,50px);
     
     
     width: 248px;
@@ -79,7 +79,7 @@
 
 }
 
-.divers{
+.divers, .centresInteretD, .qualitesD{
     display: flex;
     padding:20px;
     margin:5px ;
